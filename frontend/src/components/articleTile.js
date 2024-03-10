@@ -77,8 +77,8 @@ export const ArticleTile = ({ title, description, link }) => {
   return (
     <OuterContainer className='body1'>
       <Container>
-        <Heading> PlaceHolder</Heading>
-        <Subtitle >Basic information on the article that lorem ipsum </Subtitle>
+        <Heading> </Heading>
+        <Subtitle ></Subtitle>
       </Container >
       <StyledButton onClick={() => window.open(link, "_blank")}>
         Visit

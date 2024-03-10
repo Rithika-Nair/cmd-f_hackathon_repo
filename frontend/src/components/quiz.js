@@ -38,7 +38,10 @@ const StyledButton = styled.button`
 `;
 
 
+
 export const Quiz = () => {
+
+
   return (
     <div id='1' className='quizBody1' style={{}}>
         <h2 style={{display:'flex', justifyContent:'center', alignItems:"center"}}>Select Your Sea of Interest</h2>
