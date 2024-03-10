@@ -78,7 +78,7 @@ fetch(`https://noembed.com/embed?dataType=json&url=${videos[slideNumber].url}`)
     return (
         <div id='1' style={{display:"flex", flexDirection: "column", alignItems: 'center', justifyContent: 'center', paddingTop: 20, paddingBottom: 20, marginTop: 110}}>
              <h2> Explore Ocean Wisdom: Dive into Engaging Videos!</h2>
-        <div id="1" className='videoCont' style={{}}>
+        <div  className='videoCont' style={{}}>
 
             <div >
                 <div >

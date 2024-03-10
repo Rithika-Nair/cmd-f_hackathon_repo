@@ -10,6 +10,8 @@ import { InputBar } from './components/InputBar.js';
 import Articles from './components/articles.js';
 import Quiz from './components/quiz.js';
 import QuizScores from './components/quizScore.js';
+import QuizQuestion from './components/quizQuestion.js';
+
 
 
 
@@ -22,9 +24,9 @@ function App() {
      <Video id='1'></Video>
      
      <ButtonSub ></ButtonSub>
-     <Quiz></Quiz>
-     <QuizScores></QuizScores>
+     <QuizQuestion id='2'></QuizQuestion>
      <Articles id='3'></Articles>
+     
      </div>
     </div>
   );
