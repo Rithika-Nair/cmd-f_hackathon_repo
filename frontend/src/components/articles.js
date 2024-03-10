@@ -8,36 +8,37 @@ import Mascot3 from '../assets/mascot3.js';
 import ButtonMain from './buttonMain.js';
 import ArticleTile from './articleTile';
 import { InputBar } from './InputBar.js';
+import ArticlesData from './articles.json';
 
 
 
 
 const Articles = () => {
-    const [render, setRender] = useState(false);
-    const [articles, setArticles] = useState();
+    // const [render, setRender] = useState(false);
+    // const [articles, setArticles] = useState([]);
 
-    useEffect(() => {
-        console.log('hello');
-        // Make a fetch request to fetch articles from the API
-        fetch('http://localhost:3005/fetch_articles')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                console.log('success');
-                return response.json();
-            })
-            .then(data => {
-                // Set the fetched articles in the state
-                setArticles(data.text);
-                setRender(true);
-                console.log(articles, render);
-            })
-            .catch(error => {
-                console.error('Error fetching articles:', error);
-            });
+    // useEffect(() => {
+    //     console.log('hello');
+    //     // Make a fetch request to fetch articles from the API
+    //     fetch('http://localhost:3005/fetch_articles')
+    //         .then(response => {
+    //             if (!response.ok) {
+    //                 throw new Error('Network response was not ok');
+    //             }
+    //             console.log('success');
+    //             return response.json();
+    //         })
+    //         .then(data => {
+    //             // Set the fetched articles in the state
+    //             setArticles(data.text);
+    //             setRender(true);
+    //             console.log(articles, render);
+    //         })
+    //         .catch(error => {
+    //             console.error('Error fetching articles:', error);
+    //         });
     
-        }, [articles]); // Run once when component mounts
+    //     }, [articles]); // Run once when component mounts
     
     return (
         <div className='articles' style={{ marginTop: '2rem', display: "flex", flexDirection: "column", alignItems: 'center', justifyContent: 'center', }}>
@@ -45,7 +46,7 @@ const Articles = () => {
             <InputBar></InputBar>
             <div className='articleGrid'>
                 {/* Map over the articles and render an ArticleTile for each article */}
-                {render && articles.map((article, index) => (
+                {ArticlesData.map((article, index) => (
                     <ArticleTile key={index} title={article.title} description={article.snippet} link={article.url} />
                 ))}
             </div>

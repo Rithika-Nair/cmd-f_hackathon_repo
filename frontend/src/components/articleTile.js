@@ -75,10 +75,10 @@ const StyledButton = styled.button`
 
 export const ArticleTile = ({ title, description, link }) => {
   return (
-    <OuterContainer className='body1'>
+    <OuterContainer className='body1' style={{overflow:"scroll",}}>
       <Container>
-        <Heading> {title}</Heading>
-        <Subtitle > {description} </Subtitle>
+        <Heading style={{fontSize:24, paddingBottom:10}}> {title}</Heading>
+        <Subtitle style={{fontSize:12, marginBottom:-100}}> {description} </Subtitle>
       </Container >
       <StyledButton onClick={() => window.open({link}, "_blank")}>
         Visit
