@@ -18,7 +18,7 @@ const Landing = () => {
                 <Col style={{display:"flex", flexDirection: "column", alignItems: 'center', justifyContent: 'center', paddingTop: 20, paddingBottom: 20, marginTop: 40}}>
                     <Logo></Logo>
                     <h1 style={{marginTop: 0}}> OceanAware</h1>
-                    <ButtonMain></ButtonMain>
+                    <ButtonMain ></ButtonMain>
                 </Col>
             </Container>
         </div>
