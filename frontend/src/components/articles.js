@@ -13,6 +13,9 @@ import ArticlesData from './articles.json';
 const Articles = () => {
     //const [render, setRender] = useState(false);
     const [render, setRender] = useState(false);
+    function onClick() {
+        setRender(true);
+      }
     // const [articles, setArticles] = useState();
     // const [article, setArticle] = useState();
     var articles = [];
@@ -66,7 +69,7 @@ const Articles = () => {
     return (
         <div className='articles' style={{ marginTop: '2rem', display: "flex", flexDirection: "column", alignItems: 'center', justifyContent: 'center', }}>
             <h2> Explore the Depths of Knowledge, One Wave at a Time</h2>
-            <InputBar ></InputBar>
+            <InputBar  handleClick={onClick}></InputBar>
 
             <h2> {articles[0]} </h2>
             {render && <div className='articleGrid'>
