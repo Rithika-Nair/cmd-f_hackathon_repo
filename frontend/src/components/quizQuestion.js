@@ -4,6 +4,7 @@ import ButtonMain from './buttonMain.js';
 import styled from "styled-components";
 import Mascot3 from '../assets/mascot3.js';
 import QuizScores from './quizScore.js';
+import Questions from '../assets/questions.json'
 
 const Topic = styled.h3`
   margin-bottom: 0rem;
@@ -124,7 +125,8 @@ if (!state) {
         </Container1>
         <Container>
           
-            <Heading>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</Heading>
+            <Heading>"What is the main reason for the death of aquatic organisms?"
+            </Heading>
             
             <Input
         placeholder='Type your answer here'
