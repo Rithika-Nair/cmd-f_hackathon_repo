@@ -10,11 +10,14 @@ import ArticleTile from './articleTile';
 import { InputBar } from './InputBar.js';
 import ArticlesData from './articles.json';
 
-
-
-
 const Articles = () => {
-    // const [render, setRender] = useState(false);
+    
+  const [render, setRender] = useState(false);
+    function onClick() {
+        setRender(true);
+      }
+
+      console.log(render);
     // const [articles, setArticles] = useState([]);
 
     // useEffect(() => {
@@ -43,10 +46,10 @@ const Articles = () => {
     return (
         <div className='articles' style={{ marginTop: '2rem', display: "flex", flexDirection: "column", alignItems: 'center', justifyContent: 'center', }}>
             <h2> Explore the Depths of Knowledge, One Wave at a Time</h2>
-            <InputBar></InputBar>
+            <InputBar handleClick={onClick}></InputBar>
             <div className='articleGrid'>
                 {/* Map over the articles and render an ArticleTile for each article */}
-                {ArticlesData.map((article, index) => (
+                {render && ArticlesData.map((article, index) => (
                     <ArticleTile key={index} title={article.title} description={article.snippet} link={article.url} />
                 ))}
             </div>
