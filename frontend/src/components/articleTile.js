@@ -77,10 +77,10 @@ export const ArticleTile = ({ title, description, link }) => {
   return (
     <OuterContainer className='body1'>
       <Container>
-        <Heading> </Heading>
-        <Subtitle ></Subtitle>
+        <Heading> {title}</Heading>
+        <Subtitle > {description} </Subtitle>
       </Container >
-      <StyledButton onClick={() => window.open(link, "_blank")}>
+      <StyledButton onClick={() => window.open({link}, "_blank")}>
         Visit
       </StyledButton>
     </OuterContainer>

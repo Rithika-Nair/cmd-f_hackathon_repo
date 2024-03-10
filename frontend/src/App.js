@@ -3,7 +3,7 @@ import './App.css';
 import Landing from './components/landing.js';
 import Header from './components/header.js';
 import Video from './components/video.js';
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
 import ArticleTile from './components/articleTile';
 import ButtonSub from './components/buttonSub.js';
 import { InputBar } from './components/InputBar.js';

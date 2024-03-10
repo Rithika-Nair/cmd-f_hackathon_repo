@@ -13,19 +13,19 @@ async function fetchArticles(req, res) {
         stream: true
     });
 
-    for await (const message of chatStream) {
-        if (message.eventType == "search-results" && 'documents' in message) {
-            const articles = message.documents;
-            try {
-                await fs.writeFile("articles.json", JSON.stringify(articles));
-                console.log('Articles saved successfully.');
-            } catch (err) {
-                console.error('Error saving articles:', err);
+        for await (const message of chatStream) {
+            if (message.eventType == "search-results" && 'documents' in message) {
+                const articles = message.documents;
+                try {
+                    await fs.writeFile("articles.json", JSON.stringify(articles));
+                    console.log('Articles saved successfully.');
+                } catch (err) {
+                    console.error('Error saving articles:', err);
+                }
+                res.json({ success: true, message: 'Articles fetched and saved successfully.' });
+                break; // Stop processing after saving articles
             }
-            res.json({ success: true, message: 'Articles fetched and saved successfully.' });
-            break; // Stop processing after saving articles
         }
     }
-}
 
 module.exports = fetchArticles;
