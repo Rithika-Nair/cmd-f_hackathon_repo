@@ -96,6 +96,14 @@ const Input = styled.input`
 export const QuizQuestion = ({question, questionNumber}) => {
   const [state, setState] = useState(false);
   const [questionNum, setQuestionNum] = useState(0);
+  const QuestionsArr = ["What are the main causes of marine pollution?",
+  "What are the short, medium, and long-term impacts of Covid-19 on ocean sustainability?",
+  "What are the possible causes for extremely high values for BOD and COD in marine sediment?",
+  "Which of the following is the reason for the high density of oil pollution?",
+  "What is the most common type of waste that is dumped into the sea?",
+  "What is the main reason for the death of aquatic organisms?",
+  "How does ship accidents cause marine pollution",
+  "What is the Gulf of Mexico oil spill also known as?"]
 
   function endQuiz() {
     setState(!state)
@@ -125,7 +133,7 @@ if (!state) {
         </Container1>
         <Container>
           
-            <Heading>"What is the main reason for the death of aquatic organisms?"
+            <Heading>{QuestionsArr[questionNum]}
             </Heading>
             
             <Input

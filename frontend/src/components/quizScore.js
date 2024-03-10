@@ -66,7 +66,7 @@ export const QuizScores = ({button}) => {
                 Score.map((score, index) => {
                   return(
                     <div key={index}>
-                    {score.score *100}
+                    {(score.score * 100).toFixed(2)}%
                     </div>
                     ) 
                 })
