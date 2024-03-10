@@ -161,3 +161,34 @@ grid-row-gap: 0px;
   text-decoration: none 
 }
 
+.quizBody1 {
+  background-image: url('./assets/quiz_bg_1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 1219.48px;
+  height: 614.99px;
+  left: 110px;
+  top: 1097px;
+  padding-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  margin-top: 2em;
+}
+
+.quizScore {
+  background-image: url('./assets/Score_pg_bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 1219.48px;
+  height: 614.99px;
+  left: 110px;
+  top: 1097px;
+  padding-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  margin-top: 2em;
+}
+
+
