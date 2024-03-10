@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "question": "What is the capital of France?",
+      "answer": "The capital of France is Paris."
+    },
+    {
+      "id": 2,
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "answer": "William Shakespeare wrote 'Romeo and Juliet'."
+    },
+    {
+      "id": 3,
+      "question": "What is the largest planet in our solar system?",
+      "answer": "Jupiter is the largest planet in our solar system."
+    },
+    {
+      "id": 4,
+      "question": "How many continents are there on Earth?",
+      "answer": "There are seven continents on Earth."
+    },
+    {
+      "id": 5,
+      "question": "What is the main ingredient in guacamole?",
+      "answer": "The main ingredient in guacamole is avocado."
+    }
+  ]
+  
