@@ -8,9 +8,7 @@ import Mascot3 from '../assets/mascot3.js';
 import ButtonMain from './buttonMain.js';
 import ArticleTile from './articleTile';
 import { InputBar } from './InputBar.js';
-
-
-
+import ArticlesData from './articles.json';
 
 const Articles = () => {
     //const [render, setRender] = useState(false);

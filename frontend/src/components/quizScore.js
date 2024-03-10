@@ -2,6 +2,7 @@ import React from 'react'
 import { Row, Col } from 'react-grid-system';
 import ButtonMain from './buttonMain.js';
 import styled from "styled-components";
+import Score from '../assets/user_final_score.json'
 
 const Heading = styled.h3`
   margin-bottom: 2rem;
@@ -56,12 +57,20 @@ const StyledButton = styled.button`
 `;
 
 
-export const QuizScores = ({button, score}) => {
+export const QuizScores = ({button}) => {
   return (
     <div  className='quizScore' style={{display:'flex', justifyContent:'center', alignItems:"center", flexDirection:"column"}}>
         <Container>
             <Heading>Good Job!</Heading>
-            <Subtitle1>Your Score: {score}%</Subtitle1>
+            <Subtitle1>Your Score: {
+                Score.map((score, index) => {
+                  return(
+                    <div key={index}>
+                    {(score.score * 100).toFixed(2)}%
+                    </div>
+                    ) 
+                })
+            }</Subtitle1>
             <Subtitle1>You're a Rockstar!</Subtitle1>
             <Subtitle2>Try a different ocean topic and play again or scroll to explore and learn more!</Subtitle2>
         </Container>
@@ -75,3 +84,5 @@ export const QuizScores = ({button, score}) => {
 }
 
 export default QuizScores
+
+

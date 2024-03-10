@@ -36,33 +36,33 @@ const Wrapper = styled.section`
     background-color: transparent
 `
 
-export const InputBar = () => {
+export const InputBar = ({handleClick}) => {
     // get amzn url from here
     const [text, setText] = useState("");
 
 
-    async function handleClick() {
+    // async function handleClick() {
 
-        // <Link
-        //     to={{
-        //         pathname: "/summary",
-        //         state: [{itemName: 'Headphones', itemPrice: 49.99}]
-        //     }}
-        // ></Link>
+    //     // <Link
+    //     //     to={{
+    //     //         pathname: "/summary",
+    //     //         state: [{itemName: 'Headphones', itemPrice: 49.99}]
+    //     //     }}
+    //     // ></Link>
      
-            // this is where we would send the amzn url to the backend
-    //   await fetch(`http://localhost:3005/api/keyword`)
-    //   .then((res) => res.json())
-    //   .then((data) => console.log(data)) // Sets variable data to fetched JSON data
-    //   .catch((err) => console.log(err));
+    //         // this is where we would send the amzn url to the backend
+    // //   await fetch(`http://localhost:3005/api/keyword`)
+    // //   .then((res) => res.json())
+    // //   .then((data) => console.log(data)) // Sets variable data to fetched JSON data
+    // //   .catch((err) => console.log(err));
       
-      // await fetch(`http://localhost:3005/api/search`)
-      // .then((res) => res.json())
-      // .then((data) => console.log(data)) // Sets variable data to fetched JSON data
-      // .catch((err) => console.log(err));  
+    //   // await fetch(`http://localhost:3005/api/search`)
+    //   // .then((res) => res.json())
+    //   // .then((data) => console.log(data)) // Sets variable data to fetched JSON data
+    //   // .catch((err) => console.log(err));  
         
   
-    }
+    // }
     
     return(
         <div>
