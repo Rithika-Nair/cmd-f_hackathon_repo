@@ -30,15 +30,24 @@ app.get("/fetch_articles", async (req, res) => {
     stream: true
   });
 
-  return res.json({
-    status: "success",
-    text: response.message,
+  let articles = [];
+
+  for await(const message of response) {
+    if(message.eventType == 'search-results' && 'documents' in message) {
+      console.log(message.documents);
+      articles = message.documents;
+    }
+  }
+
+  res.json({
+    status:"success",
+    text: JSON.stringify(articles)
   })
   // Write articles to a JSON file (optional)
   fs.writeFile("articles.json", JSON.stringify(articles), function (err) {
     if (err) throw err;
     console.log('Articles saved successfully.');
-  });
+  })
 });
 
 app.post('/generate_question', async (req,res) => {
@@ -61,7 +70,7 @@ app.post('/generate_question', async (req,res) => {
     stream: true
   });
 
-  for await (const message of chatStream) {
+  for await (const message of response) {
     if(message.eventType == 'stream-end' && message.is_finished == true)
       console.log(message);
       res.json({
