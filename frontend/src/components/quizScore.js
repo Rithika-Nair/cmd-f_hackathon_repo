@@ -61,7 +61,7 @@ export const QuizScores = () => {
     <div id='1' className='quizScore' style={{display:'flex', justifyContent:'center', alignItems:"center", flexDirection:"column"}}>
         <Container>
             <Heading>Good Job!</Heading>
-            <Subtitle1>You Score 80%</Subtitle1>
+            <Subtitle1>Your Score: 80%</Subtitle1>
             <Subtitle1>You're a Rockstar!</Subtitle1>
             <Subtitle2>Try a different ocean topic and play again or scroll to explore and learn more!</Subtitle2>
         </Container>

@@ -31,10 +31,8 @@ const StyledButton = styled.button`
   .text {
     text-align: left;
     margin-left: 0.5em;
-  }
-
-  .icon {
-    justify-content: right;
+    width: 40em;
+    padding-left: 1em;
   }
 
 `;
@@ -45,8 +43,8 @@ export const Quiz = () => {
     <div id='1' className='quizBody1' style={{}}>
         <h2 style={{display:'flex', justifyContent:'center', alignItems:"center"}}>Select Your Sea of Interest</h2>
         <StyledButton>
-            <div class="text">How pollution affects marine life</div>
-            <div class="icon"><IoIosArrowForward /></div>
+            <div class="text">How Does Pollution Affect Marine Life</div>
+            <div><IoIosArrowForward /></div>
         </StyledButton>
         <StyledButton>
         <div class="text">The Great Pacific Garbage Patch</div>
