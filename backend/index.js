@@ -34,15 +34,12 @@ app.get("/fetch_articles", async (req, res) => {
 
   for await(const message of response) {
     if(message.eventType == 'search-results' && 'documents' in message) {
-      console.log(message.documents);
       articles = message.documents;
     }
   }
+  console.log(articles)
 
-  res.json({
-    status:"success",
-    text: JSON.stringify(articles)
-  })
+  res.json(articles);
   // Write articles to a JSON file (optional)
   fs.writeFile("articles.json", JSON.stringify(articles), function (err) {
     if (err) throw err;

@@ -67,7 +67,7 @@ export const InputBar = () => {
     return(
         <div>
             <Wrapper>
-            <Input
+            <Input id='text'
         placeholder='Enter an ocean topic'
        // onChange={(e) => {setUrl(e.target.value)}}
             />

@@ -60,7 +60,7 @@ const StyledButton = styled.button`
   color: #001B48;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin-top: 8rem;
+  margin-top: 7rem;
   margin-left:4rem;
 
   width: 4em;
@@ -75,10 +75,10 @@ const StyledButton = styled.button`
 
 export const ArticleTile = ({ title, description, link }) => {
   return (
-    <OuterContainer className='body1'>
+    <OuterContainer className='body1' style={{overflow:"scroll",}}>
       <Container>
-        <Heading> {title}</Heading>
-        <Subtitle > {description} </Subtitle>
+        <Heading style={{fontSize:24, paddingBottom:10}}> {title}</Heading>
+        <Subtitle style={{fontSize:12, marginBottom:-100}}> {description} </Subtitle>
       </Container >
       <StyledButton onClick={() => window.open({link}, "_blank")}>
         Visit
