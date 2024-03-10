@@ -8,6 +8,8 @@ import ArticleTile from './components/articleTile';
 import ButtonSub from './components/buttonSub.js';
 import { InputBar } from './components/InputBar.js';
 import Articles from './components/articles.js';
+import Quiz from './components/quiz.js';
+import QuizScores from './components/quizScore.js';
 
 
 
@@ -20,6 +22,8 @@ function App() {
      <Video id='1'></Video>
      
      <ButtonSub ></ButtonSub>
+     <Quiz></Quiz>
+     <QuizScores></QuizScores>
      <Articles id='3'></Articles>
      </div>
     </div>
