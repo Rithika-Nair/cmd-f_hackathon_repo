@@ -191,4 +191,30 @@ grid-row-gap: 0px;
   margin-top: 2em;
 }
 
+.quizQuestion {
+  background-image: url('./assets/quiz_bg_question.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  width: 1219.48px;
+  height: 614.99px;
+  left: 110px;
+  top: 1097px;
+  padding-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  margin-top: 2em;
+}
+
+.mascotQuestion {
+  /* mascot 2 */
+
+position: absolute;
+left: 7.98%;
+right: 78.52%;
+top: 91.94%;
+bottom: -14.91%;
+
+transform: rotate(-89.48deg);
+
+}

@@ -56,16 +56,16 @@ const StyledButton = styled.button`
 `;
 
 
-export const QuizScores = () => {
+export const QuizScores = ({button, score}) => {
   return (
-    <div id='1' className='quizScore' style={{display:'flex', justifyContent:'center', alignItems:"center", flexDirection:"column"}}>
+    <div  className='quizScore' style={{display:'flex', justifyContent:'center', alignItems:"center", flexDirection:"column"}}>
         <Container>
             <Heading>Good Job!</Heading>
-            <Subtitle1>Your Score: 80%</Subtitle1>
+            <Subtitle1>Your Score: {score}%</Subtitle1>
             <Subtitle1>You're a Rockstar!</Subtitle1>
             <Subtitle2>Try a different ocean topic and play again or scroll to explore and learn more!</Subtitle2>
         </Container>
-        <StyledButton>
+        <StyledButton onClick={button}>
             Play Again
         </StyledButton>
     </div>
