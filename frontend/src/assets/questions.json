@@ -1,0 +1,42 @@
+[
+    {
+        "id":"1",
+        "question": "What are the main causes of marine pollution?",
+        "answer": "Tanker spills, backwater contamination, Incandues waste, Atmospheric pollution, Runoff from land (from agriculture or urban storm drains), Nonpoint source pollution, Natural disasters"
+    },
+    {
+        "id":"2",
+        "question": "What are the short, medium, and long-term impacts of Covid-19 on ocean sustainability?",
+        "answer": "Several factors impact ocean sustainability, including the short, medium, and long-term impacts of Covid-19. The Covid-19 pandemic has impacted ocean sustainability by altering the ecology of coastal systems and addressing ocean deoxygenization. The Covid-19 pandemic has had significant negative impacts on ocean sustainability. It has been associated with increased pollution, especially in coastal areas with sewage plants and rivers discharging into the sea. The increased volume of waste discharge has been a primary driver of this pollution. Additionally, the pandemic has also affected the ability to control and prevent marine pollution. For instance, the capacity to implement strategies to address ocean deoxygenization may have been impacted. The exacerbators of Covid-19 on ocean sustainability may encompass aspects such as the reduction of available resources and financial capacity to combat marine pollution. The pandemic has also had medium- and long-term impacts on ocean sustainability, including altered ecological systems and addressing ocean deoxygenization."
+    },
+    {
+        "id":"3",
+        "question": " What are the possible causes for extremely high values for BOD and COD in marine sediment?",
+        "answer": "The possible causes for extremely high values of BOD and COD in marine sediment are the result of sewage disposal in oceans, which increases biological oxygen demand (BOD) and decreases dissolved oxygen demand (DO). It is also caused by the death of aquatic organisms, ship materials stuck inside the marine organisms, and dredged material that carries heavy metals. also cause the high BOD and COD values."
+    },
+    {
+        "id":"4",
+        "question": "Which of the following is the reason for the high density of oil pollution?",
+        "answer": "The high density of oil pollution is caused by the huge amount of waste that is discharged into the sea. It also causes the ship materials to get stuck inside the marine organisms."
+    },
+    {
+        "id":"5",
+        "question": "What is the most common type of waste that is dumped into the sea?",
+        "answer": "The answer is organic waste, such as flesh, food remains, etc. It degrades into water and contaminates the environment."
+    },
+    {
+        "id":"6",
+        "question": "What is the main reason for the death of aquatic organisms?",
+        "answer": "The answer is the death of aquatic organisms due to the introduction of garbage and other waste. It also affects aquatic species, such as fish, shrimp, etc., leading to extinction."
+    },
+    {
+        "id":"7",
+        "question":"How does ship accidents cause marine pollution",
+        "answer":"Ship accidents and accidental spillages at sea cause marine pollution. Also, the damage can be caused by the size of the ship or the material it carries, such as heavy metals."
+    },
+    {
+        "id":"8",
+        "question":"What is the Gulf of Mexico oil spill also known as?",
+        "answer":"The Deepwater Horizon oil spill, also known as the Gulf of Mexico oil spill, is a notable example of an oil spill with devastating effects on the marine environment. It caused the catastrophic explosion on the Deepwater Horizon offshore oil drilling platform, with a huge volume of millions of liters of oil spilled."
+    }
+]
