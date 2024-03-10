@@ -14,16 +14,16 @@ const Landing = () => {
 
     return (
         <div>
-            <Container  style={{backgroundColor:'white', display:'flex', alignContent: 'center',justifyContent:'center',}}> 
-           <Col style={{backgroundColor:'black', alignItems: 'center',justifyContent:'center',}}>
-            <Logo></Logo>
-            <h1 > OceanAware</h1>
-            <ButtonMain></ButtonMain>
-            </Col>
+            <Container>
+                <Col style={{display:"flex", flexDirection: "column", alignItems: 'center', justifyContent: 'center', paddingTop: 20, paddingBottom: 20, marginTop: 40}}>
+                    <Logo></Logo>
+                    <h1 style={{marginTop: 0}}> OceanAware</h1>
+                    <ButtonMain ></ButtonMain>
+                </Col>
             </Container>
-          </div>
-        
-        
+        </div>
+
+
     )
 }
 
