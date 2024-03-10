@@ -71,3 +71,32 @@ h6 {
   font-family:'Open Sans';
 }
 
+.videoCont {
+  /* Rectangle 8 */
+
+width: 1219.48px;
+height: 614.99px;
+left: 110px;
+top: 1097px;
+padding-top: 1rem;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+background: linear-gradient(180deg, #001B48 0%, #2E6597 100%);
+border-radius: 20px;
+
+}
+
+.videoThumb {
+  width: 200px;
+  margin-top: 1.7rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  border-radius: 10px;
+}
+
+.videoPlay {
+  margin-left: 0;
+  margin-top: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  border-radius: 10px;
+}

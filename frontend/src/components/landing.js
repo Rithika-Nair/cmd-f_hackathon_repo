@@ -14,7 +14,7 @@ const Landing = () => {
 
     return (
         <div>
-            <Container  style={{backgroundColor:'white', display:'flex', alignItems: 'center',justifyContent:'center',}}> 
+            <Container  style={{backgroundColor:'white', display:'flex', alignContent: 'center',justifyContent:'center',}}> 
            <Col style={{backgroundColor:'black', alignItems: 'center',justifyContent:'center',}}>
             <Logo></Logo>
             <h1 > OceanAware</h1>
